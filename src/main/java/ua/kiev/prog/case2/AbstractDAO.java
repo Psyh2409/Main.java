@@ -147,7 +147,7 @@ public abstract class AbstractDAO<K, T> {
                         crtTbl.append(getNameForColumn(f))
                                 .append(" VARCHAR(")
                                 .append(f.getAnnotation(Varchar.class).capacity())
-                                .append("),");
+                                .append(") NOT NULL,");
                     } else {
                         crtTbl.append(getNameForColumn(f))
                                 .append(" ")
